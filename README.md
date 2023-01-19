@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+This is my personal site recently reimagined as a full rails app. It showcases my background, projects, online presence and written articles implementing a full CMS (content maanagement system.)
 
-* Ruby version
+The live version of the site can be found [here](https://cryptic-hamlet-40620.herokuapp.com/).
 
-* System dependencies
+### Stack
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Ruby 3.1.2
+Ruby on Rails 7.0.4.1
+Tailwind CSS
