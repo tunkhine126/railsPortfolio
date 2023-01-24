@@ -19,8 +19,8 @@
           <tbody class="text-gray-900">
             <% @projects.each do |project| %>
               <tr>
-                <td class="p-4 text-sm font-normal flex-wrap">
-                  <%= link_to project.title, project_path(project.slug), class: "text-color-primary" %>
+                <td class="p-4 text-sm font-normal">
+                  <%= link_to project.title, project_path(project.slug), class: "text-color-primary hover:text-color-normal" %>
                 </td>
                 <td class="p-4 text-sm font-normal flex-wrap">
                   <%= project.description %>
