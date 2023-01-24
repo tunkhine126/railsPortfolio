@@ -8,7 +8,7 @@
                 <th scope="col" class="p-4 text-xs font-semibold tracking-wider text-left uppercase">
                   Project
                 </th>
-                <th scope="col" class="p-4 text-xs font-semibold tracking-wider text-left uppercase">
+                <th scope="col" class="p-4 text-xs font-semibold tracking-wider text-left uppercase flex-wrap">
                   Description
                 </th>
                 <th scope="col" class="p-4 text-xs font-semibold tracking-wider text-left uppercase">
@@ -19,13 +19,13 @@
           <tbody class="text-gray-900">
             <% @projects.each do |project| %>
               <tr>
-                <td class="p-4 text-sm font-normal whitespace-nowrap">
+                <td class="p-4 text-sm font-normal flex-wrap">
                   <%= link_to project.title, project_path(project.slug), class: "text-color-primary" %>
                 </td>
-                <td class="p-4 text-sm font-normal whitespace-nowrap">
+                <td class="p-4 text-sm font-normal flex-wrap">
                   <%= project.description %>
                 </td>
-                <td class="p-4 text-sm font-normal whitespace-nowrap">
+                <td class="p-4 text-sm font-normal flex-wrap">
                   <span class="
                     <% if project.status == 'inactive' %>
                       text-color-twilight
