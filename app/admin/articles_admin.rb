@@ -20,6 +20,7 @@ Trestle.resource(:articles) do
     text_field      :content
     text_field      :link_to
     datetime_field  :published_at
+    text_field      :img_url
 
     row do
       col { datetime_field :updated_at }

@@ -1,6 +1,9 @@
-<div class="content-wrapper">
-  <h2><%= @project.title %> <time class="code"><%= @project.description %></time></h2>
+<div class="content-wrapper px-2 sm:px-4">
+  <p class="mb-2">
+    <a class="text-color-primary hover:text-color-normal font-medium" href="<%= @project.link_to %>" target="_blank"><%= @project.title %></a>
+    <span class="text-color-secondary text-sm"><%= @project.description %></span>
+  <p>
   <div class="content">
-
+    <img class="bg-contain rounded-lg" src="<%= @project.img_url %>" alt="Project Screenshot"> </img>
   </div>
 </div>

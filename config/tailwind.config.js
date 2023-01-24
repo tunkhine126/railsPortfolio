@@ -31,7 +31,7 @@ module.exports = {
         'color-errorHeader': '#991B1B',
         'color-error': '#F87171',
         'white': '#FFFFFF',
-        'nav': '#D1D5DB',  
+        'nav': '#D1D5DB',
       },
       extend: {
         colors: {

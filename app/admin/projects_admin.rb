@@ -22,6 +22,7 @@ Trestle.resource(:projects) do
     text_field :link_to
     text_field :content
     text_field :status
+    text_field :img_url
 
     row do
       col { datetime_field :updated_at }

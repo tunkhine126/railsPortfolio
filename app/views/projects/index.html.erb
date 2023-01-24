@@ -1,13 +1,48 @@
 <div class="content-wrapper px-2 sm:px-4">
   <p class="text-lg font-medium pb-2 text-color-normal">Stuff created</p>
   <div class="content">
-    <ul class="projects">
-      <% @projects.each do |project| %>
-        <li class="p-2">
-          <%= link_to project.title, project_path(project.slug), class: "text-color-primary" %>
-          <span class="bg-colorPrimaryLight text-color-twilight px-2"><%= project.status.humanize %></span>
-        </li>
-      <% end %>
-    </ul>
+    <div class="overflow-hidden">
+      <table class="min-w-full">
+          <thead class="text-white bg-slate-300">
+              <tr>
+                <th scope="col" class="p-4 text-xs font-semibold tracking-wider text-left uppercase">
+                  Project
+                </th>
+                <th scope="col" class="p-4 text-xs font-semibold tracking-wider text-left uppercase">
+                  Description
+                </th>
+                <th scope="col" class="p-4 text-xs font-semibold tracking-wider text-left uppercase">
+                  Status
+                </th>
+              </tr>
+          </thead>
+          <tbody class="text-gray-900">
+            <% @projects.each do |project| %>
+              <tr>
+                <td class="p-4 text-sm font-normal whitespace-nowrap">
+                  <%= link_to project.title, project_path(project.slug), class: "text-color-primary" %>
+                </td>
+                <td class="p-4 text-sm font-normal whitespace-nowrap">
+                  <%= project.description %>
+                </td>
+                <td class="p-4 text-sm font-normal whitespace-nowrap">
+                  <span class="
+                    <% if project.status == 'inactive' %>
+                      text-color-twilight
+                    <% elsif project.status == 'active' %>
+                      text-color-normal
+                    <% else %>
+                      text-color-secondary
+                    <% end %>   
+                      px-2">
+                    <%= project.status.humanize %>
+                  </span>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </div>
