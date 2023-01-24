@@ -4,6 +4,29 @@
     <p class="text-color-secondary text-lg px-2 sm:px-4">Software Engineer. Dad. Generalist.</p>
   </div>
   <p class="p-2 sm:p-4 text-base font-medium">
-    <%= link_to 'About', about_path, class:'text-color-primary hover:underline hover:text-color-normal' %> <span class="px-4 text-color-secondary">||</span> <%= link_to 'Articles', articles_path, class:'text-color-primary hover:underline hover:text-color-normal' %> <span class="px-4 text-color-secondary">||</span> <%= link_to 'Projects', projects_path, class:'text-color-primary hover:underline hover:text-color-normal' %> <span class='px-4 text-color-secondary '>||</span> <%= link_to 'Resume', resume_path, class:'text-color-primary hover:underline hover:text-color-normal' %>
+    <% url = request.path_info %>
+    <% if url.include?('about') %>
+      <%= link_to 'About', about_path, class:'text-color-normal hover:underline hover:text-color-secondary' %>
+    <% else %>
+      <%= link_to 'About', about_path, class:'text-color-primary hover:underline hover:text-color-normal' %>
+    <% end %>
+    <span class="px-4 text-color-secondary">||</span> 
+    <% if url.include?('articles') %>
+      <%= link_to 'Articles', articles_path, class:'text-color-normal hover:underline hover:text-color-secondary' %>
+    <% else %>
+      <%= link_to 'Articles', articles_path, class:'text-color-primary hover:underline hover:text-color-normal' %> 
+    <% end %>
+    <span class="px-4 text-color-secondary">||</span> 
+    <% if url.include?('projects') %>
+      <%= link_to 'Projects', projects_path, class:'text-color-normal hover:underline hover:text-color-secondary' %>
+    <% else %>
+      <%= link_to 'Projects', projects_path, class:'text-color-primary hover:underline hover:text-color-normal' %>
+    <% end %>
+     <span class='px-4 text-color-secondary '>||</span> 
+    <% if url.include?('resume') %>
+      <%= link_to 'Resume', resume_path, class:'text-color-normal hover:underline hover:text-color-secondary' %>
+    <% else %>
+      <%= link_to 'Resume', resume_path, class:'text-color-primary hover:underline hover:text-color-normal' %>
+    <% end %>
   </p>
 </div>
