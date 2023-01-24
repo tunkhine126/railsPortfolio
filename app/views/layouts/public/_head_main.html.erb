@@ -10,19 +10,19 @@
     <% else %>
       <%= link_to 'About', about_path, class:'text-color-primary hover:underline hover:text-color-normal' %>
     <% end %>
-    <span class="px-4 text-color-secondary">||</span> 
+    <span class="px-2 sm:px-4 text-color-secondary">||</span> 
     <% if url.include?('articles') %>
       <%= link_to 'Articles', articles_path, class:'text-color-normal hover:underline hover:text-color-secondary' %>
     <% else %>
       <%= link_to 'Articles', articles_path, class:'text-color-primary hover:underline hover:text-color-normal' %> 
     <% end %>
-    <span class="px-4 text-color-secondary">||</span> 
+    <span class="px-2 sm:px-4 text-color-secondary">||</span> 
     <% if url.include?('projects') %>
       <%= link_to 'Projects', projects_path, class:'text-color-normal hover:underline hover:text-color-secondary' %>
     <% else %>
       <%= link_to 'Projects', projects_path, class:'text-color-primary hover:underline hover:text-color-normal' %>
     <% end %>
-     <span class='px-4 text-color-secondary '>||</span> 
+     <span class='px-2 sm:px-4 text-color-secondary '>||</span> 
     <% if url.include?('resume') %>
       <%= link_to 'Resume', resume_path, class:'text-color-normal hover:underline hover:text-color-secondary' %>
     <% else %>
