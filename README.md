@@ -4,7 +4,7 @@
 
 This is my personal site recently reimagined as a full rails app. It showcases my background, projects, online presence and written articles implementing a full CMS (content management system.)
 
-The live version of the site can be found [here](https://cryptic-hamlet-40620.herokuapp.com/).
+The site can be found [here](https://www.tunkhine.dev/).
 
 ### Stack
 
