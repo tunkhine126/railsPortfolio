@@ -5,7 +5,7 @@
       <% @articles.each do |article| %>
         <li class="p-2">
           <a href="<%= article.link_to %>" class="text-sm sm:text-base text-color-primary hover:text-color-normal font-medium" target="_blank"><%= article.title %></a>
-          <span class="text-sm sm:text-base bg-colorPrimaryLight text-color-twilight px-2"><%= article.published_at.strftime("%D") %></span>
+          <span class="text-sm sm:text-base  text-color-secondary px-2"><%= article.published_at.strftime("%D") %></span>
         </li>
       <% end %>
     </ul>

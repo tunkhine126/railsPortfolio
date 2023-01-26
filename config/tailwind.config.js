@@ -33,25 +33,23 @@ module.exports = {
         'white': '#FFFFFF',
         'nav': '#D1D5DB',
       },
-      extend: {
-        colors: {
-          colorPrimary: '#f171b4',
-          colorPrimaryLight: '#209BF1',
-          colorSecondary: '#898888',
-          secondary: '#424242',
-          background: '#F7F8FC',
-          footer: '#111827',
-          twilight: '#e4e4e4',
-          error: '#FFFAFA',
-          errorIcon: '#F87171',
-          nav: '#2F2F2F',
-        },
-        letterSpacing: {
-          wide: '.67px',
-        },
-        boxShadow: {
-          lg: '0px 4.6102px 4.6102px rgba(0, 0, 0, 0.25)',
-        },
+      colors: {
+        colorPrimary: '#f171b4',
+        colorPrimaryLight: '#209BF1',
+        colorSecondary: '#898888',
+        secondary: '#424242',
+        background: '#F7F8FC',
+        footer: '#111827',
+        twilight: '#e4e4e4',
+        error: '#FFFAFA',
+        errorIcon: '#F87171',
+        nav: '#2F2F2F',
+      },
+      letterSpacing: {
+        wide: '.67px',
+      },
+      boxShadow: {
+        lg: '0px 4.6102px 4.6102px rgba(0, 0, 0, 0.25)',
       },
       placeholderColor: {
         'color-primary': '#00BAE0',
