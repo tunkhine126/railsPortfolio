@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   resources :projects, only: [:index, :show]
 
   get 'about', to: 'landing#about'
-  get 'resume', to: 'landing#resume'
+  # get 'resume', to: 'landing#resume'
 end
