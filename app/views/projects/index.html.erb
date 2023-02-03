@@ -25,16 +25,23 @@
                 <td class="p-4 text-sm font-normal flex-wrap">
                   <%= project.description %>
                 </td>
-                <td class="p-4 text-sm font-normal">
+                <td class="p-4 text-sm font-normal whitespace-nowrap">
                   <span class="
                     <% if project.status == 'inactive' %>
-                      text-color-twilight
+                      text-color-error
                     <% elsif project.status == 'active' %>
                       text-color-normal
                     <% else %>
                       text-color-secondary
                     <% end %>   
                       px-2">
+                    <% if project.status == 'inactive' %>
+                      ⚰️
+                    <% elsif project.status == 'active' %>
+                      👨🏽‍💻
+                    <% else %>
+                      🏃🏾‍♂️
+                    <% end %>
                     <%= project.status.humanize %>
                   </span>
                 </td>
